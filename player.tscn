@@ -81,8 +81,10 @@ scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_4cpob")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.397539
+frame_progress = 0.346325
 offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_xi81b")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
